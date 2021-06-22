@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quellen &#8212; Facial Emotion Recognition</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Fazit" href="conclusion.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Facial Emotion Recognition</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Facial Emotion Recognition
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="definition.html">
+   Was ist Facial Emotion Recognition?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="human_communication.html">
+   Menschliche Kommunikation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="featureextraction.html">
+   Mimikcodierung und Feature Extraction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="datasets.html">
+   Daten(sätze)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="models.html">
+   FER Ansätze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fem_impl.html">
+   Implementation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="VideoTest.html">
+   Selbsttrainiertes Modell per Webcam testen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="criticism.html">
+   Kritik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="conclusion.html">
+   Fazit
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Quellen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/references.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/jgrimm22/facial-emotion-recognition"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/jgrimm22/facial-emotion-recognition/issues/new?title=Issue%20on%20page%20%2Freferences.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="quellen">
+<h1>Quellen<a class="headerlink" href="#quellen" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>An enhanced thermal face recognition method based on multiscale complex fusion for Gabor coefficients - Scientific Figure on ResearchGate. Available from: <a class="reference external" href="https://www.researchgate.net/figure/The-samples-in-NVIE-thermal-database_fig2_257627313">https://www.researchgate.net/figure/The-samples-in-NVIE-thermal-database_fig2_257627313</a> [accessed 12 Jun, 2021]</p></li>
+<li><p>Arbel, Nir. „How LSTM Networks Solve the Problem of Vanishing Gradients - A Simple, Straightforward Mathematical Explanation“. <a class="reference external" href="http://Medium.Datadriveninvestor.Com">Medium.Datadriveninvestor.Com</a> (blog), 21. Dezember 2018. <a class="reference external" href="https://medium.datadriveninvestor.com/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577">https://medium.datadriveninvestor.com/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577</a>. [accessed 12 Jun, 2021]</p></li>
+<li><p>Barrett, Lisa Feldman, Ralph Adolphs, Stacy Marsella, Aleix M. Martinez, und Seth D. Pollak. „Emotional Expressions Reconsidered: Challenges to Inferring Emotion From Human Facial Movements“. Psychological Science in the Public Interest 20, Nr. 1 (Juli 2019): 1–68. <a class="reference external" href="https://doi.org/10.1177/1529100619832930">https://doi.org/10.1177/1529100619832930</a>.</p></li>
+<li><p>Cascade Classifier. OpenCV, o. J. <a class="reference external" href="https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html">https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html</a>.</p></li>
+<li><p>CK+ Dataset. Available from: <a class="reference external" href="https://paperswithcode.com/dataset/ck">https://paperswithcode.com/dataset/ck</a> [accessed 12 Jun, 2021]</p></li>
+<li><p>Clark, Elizabeth A., J’Nai Kessinger, Susan E. Duncan, Martha Ann Bell, Jacob Lahne, Daniel L. Gallagher, und Sean F. O’Keefe. „The Facial Action Coding System for Characterization of Human Affective Response to Consumer Product-Based Stimuli: A Systematic Review“. Frontiers in Psychology 11 (Mai 2020): 920. <a class="reference external" href="https://doi.org/10.3389/fpsyg.2020.00920">https://doi.org/10.3389/fpsyg.2020.00920</a>.</p></li>
+<li><p>„Compound Facial Expressions of Emotion: From Basic Research to Clinical Applications“. Dialogues in Clinical Neuroscience 17, Nr. 4 (Dezember 2015): 443–55. <a class="reference external" href="https://doi.org/10.31887/DCNS.2015.17.4/sdu">https://doi.org/10.31887/DCNS.2015.17.4/sdu</a>.</p></li>
+<li><p>Cowen, Alan S., und Dacher Keltner. „Self-Report Captures 27 Distinct Categories of Emotion Bridged by Continuous Gradients“. Proceedings of the National Academy of Sciences 114, Nr. 38 (September 2017): E7900–7909. <a class="reference external" href="https://doi.org/10.1073/pnas.1702247114">https://doi.org/10.1073/pnas.1702247114</a>.</p></li>
+<li><p>Du, S., Y. Tao, und A. M. Martinez. „Compound Facial Expressions of Emotion“. Proceedings of the National Academy of Sciences 111, Nr. 15 (April 2014): E1454–62. <a class="reference external" href="https://doi.org/10.1073/pnas.1322355111">https://doi.org/10.1073/pnas.1322355111</a>.</p></li>
+<li><p>Emotion-Gif. Available from: <a class="reference external" href="https://blog.iao.fraunhofer.de/images/blog/emotions.gif">https://blog.iao.fraunhofer.de/images/blog/emotions.gif</a> [accessed 12 Jun, 2021]</p></li>
+<li><p>Facial Expression Recognition using Convolutional Neural Networks: State of the Art - Scientific Figure on ResearchGate. Available from: <a class="reference external" href="https://www.researchgate.net/figure/Example-images-from-the-FER2013-dataset-3-illustrating-variabilities-in-illumination_fig1_311573401">https://www.researchgate.net/figure/Example-images-from-the-FER2013-dataset-3-illustrating-variabilities-in-illumination_fig1_311573401</a> [accessed 12 Jun, 2021]</p></li>
+<li><p>Feng, Kexin &amp; Chaspari, Theodora. (2020). A Review of Generalizable Transfer Learning in Automatic Emotion Recognition. Frontiers in Computer Science. 2. <a class="reference external" href="https://doi.org/10.3389/fcomp.2020.00009">https://doi.org/10.3389/fcomp.2020.00009</a>.</p></li>
+<li><p>gitshanks/fer2013. github, 2018. <a class="reference external" href="https://github.com/gitshanks/fer2013">https://github.com/gitshanks/fer2013</a>.</p></li>
+<li><p>Goschke, Thomas. Emotionspsychologie 1. Dresden, 2013. <a class="reference external" href="https://tu-dresden.de/mn/psychologie/ifap/allgpsy/ressourcen/dateien/lehre/lehreveranstaltungen/goschke_lehre/ws_2013/vl_motivation/VL-Emotion-1.pdf?lang=de">https://tu-dresden.de/mn/psychologie/ifap/allgpsy/ressourcen/dateien/lehre/lehreveranstaltungen/goschke_lehre/ws_2013/vl_motivation/VL-Emotion-1.pdf?lang=de</a>.</p></li>
+<li><p>HCI. Available from: <a class="reference external" href="https://mozajka.co/wp-content/uploads/2019/09/HUMAN-COMPUTER-INTERACTION-1000x500.jpg">https://mozajka.co/wp-content/uploads/2019/09/HUMAN-COMPUTER-INTERACTION-1000x500.jpg</a> [accessed 13 Jun, 2021]</p></li>
+<li><p>Huang, Yunxin, Fei Chen, Shaohe Lv, und Xiaodong Wang. „Facial Expression Recognition: A Survey“. Symmetry 11, Nr. 10 (20. September 2019): 1189. <a class="reference external" href="https://doi.org/10.3390/sym11101189">https://doi.org/10.3390/sym11101189</a>.</p></li>
+<li><p>Ko, Byoung. „A Brief Review of Facial Emotion Recognition Based on Visual Information“. Sensors 18, Nr. 2 (30. Januar 2018): 401. <a class="reference external" href="https://doi.org/10.3390/s18020401">https://doi.org/10.3390/s18020401</a>.</p></li>
+<li><p>Kopaczka, Marcin, Raphael Kolk, und Dorit Merhof. „A Fully Annotated Thermal Face Database and Its Application for Thermal Facial Expression Recognition“. In 2018 IEEE International Instrumentation and Measurement Technology Conference (I2MTC), 1–6. Houston, TX: IEEE, 2018. <a class="reference external" href="https://doi.org/10.1109/I2MTC.2018.8409768">https://doi.org/10.1109/I2MTC.2018.8409768</a>.</p></li>
+<li><p>Lopes, André Teixeira, Edilson de Aguiar, Alberto F. De Souza, und Thiago Oliveira-Santos. „Facial Expression Recognition with Convolutional Neural Networks: Coping with Few Data and the Training Sample Order“. Pattern Recognition 61 (Januar 2017): 610–28. <a class="reference external" href="https://doi.org/10.1016/j.patcog.2016.07.026">https://doi.org/10.1016/j.patcog.2016.07.026</a>.</p></li>
+<li><p>Lucey, Patrick, Jeffrey F. Cohn, Takeo Kanade, Jason Saragih, Zara Ambadar, und Iain Matthews. „The Extended Cohn-Kanade Dataset (CK+): A Complete Dataset for Action Unit and Emotion-Specified Expression“. In 2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition - Workshops, 94–101. San Francisco, CA, USA: IEEE, 2010. <a class="reference external" href="https://doi.org/10.1109/CVPRW.2010.5543262">https://doi.org/10.1109/CVPRW.2010.5543262</a>.</p></li>
+<li><p>Lyons, M., S. Akamatsu, M. Kamachi, und J. Gyoba. „Coding Facial Expressions with Gabor Wavelets“. In Proceedings Third IEEE International Conference on Automatic Face and Gesture Recognition, 200–205. Nara, Japan: IEEE Comput. Soc, 1998. <a class="reference external" href="https://doi.org/10.1109/AFGR.1998.670949">https://doi.org/10.1109/AFGR.1998.670949</a>.</p></li>
+<li><p>Mavadati, S. Mohammad, Mohammad H. Mahoor, Kevin Bartlett, Philip Trinh, und Jeffrey F. Cohn. „DISFA: A Spontaneous Facial Action Intensity Database“. IEEE Transactions on Affective Computing 4, Nr. 2 (April 2013): 151–60. <a class="reference external" href="https://doi.org/10.1109/T-AFFC.2013.4">https://doi.org/10.1109/T-AFFC.2013.4</a>.</p></li>
+<li><p>Myers, David G., und Siegfried Hoppe-Graff. Psychologie. 3., Vollst. überarb. und erw. Aufl. Springer-Lehrbuch. Berlin: Springer, 2014.</p></li>
+<li><p>Ouanan, Hamid, Mohammed Ouanan, und Brahim Aksasse. „Facial landmark localization: Past, present and future“. In 2016 4th IEEE International Colloquium on Information Science and Technology (CiSt), 487–93. Tangier, Morocco: IEEE, 2016. <a class="reference external" href="https://doi.org/10.1109/CIST.2016.7805097">https://doi.org/10.1109/CIST.2016.7805097</a>.</p></li>
+<li><p>Pantic, M., M. Valstar, R. Rademaker, und L. Maat. „Web-Based Database for Facial Expression Analysis“. In 2005 IEEE International Conference on Multimedia and Expo, 317–21. Amsterdam, The Netherlands: IEEE, 2005. <a class="reference external" href="https://doi.org/10.1109/ICME.2005.1521424">https://doi.org/10.1109/ICME.2005.1521424</a>.</p></li>
+<li><p>Pramerdorfer, Christopher, und Martin Kampel. „Facial Expression Recognition Using Convolutional Neural Networks: State of the Art“. ArXiv:1612.02903 [Cs], 8. Dezember 2016. <a class="reference external" href="http://arxiv.org/abs/1612.02903">http://arxiv.org/abs/1612.02903</a>.</p></li>
+<li><p>Social Robot. Available from: <a class="reference external" href="https://www.springwise.com/wp-content/uploads/2018/08/QTrobot_autism_social_robot_Springwise.jpg">https://www.springwise.com/wp-content/uploads/2018/08/QTrobot_autism_social_robot_Springwise.jpg</a> [accessed 13 Jun, 2021]</p></li>
+<li><p>Zhang, Xing, Lijun Yin, Jeffrey F. Cohn, Shaun Canavan, Michael Reale, Andy Horowitz, Peng Liu, und Jeffrey M. Girard. „BP4D-Spontaneous: A High-Resolution Spontaneous 3D Dynamic Facial Expression Database“. Image and Vision Computing 32, Nr. 10 (Oktober 2014): 692–706. <a class="reference external" href="https://doi.org/10.1016/j.imavis.2014.06.002">https://doi.org/10.1016/j.imavis.2014.06.002</a>.</p></li>
+<li><p>Zhao, Guoying, und Xiaobai Li. „Automatic Micro-Expression Analysis: Open Challenges“. Frontiers in Psychology 10 (August 2019): 1833. <a class="reference external" href="https://doi.org/10.3389/fpsyg.2019.01833">https://doi.org/10.3389/fpsyg.2019.01833</a>.</p></li>
+</ul>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="conclusion.html" title="previous page">Fazit</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Jessica Hofmann, Julia Grimm<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
