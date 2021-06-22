@@ -1,0 +1,17 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: definition
+- file: human_communication
+- file: featureextraction
+- file: datasets
+- file: models
+- file: fem_impl
+- file: VideoTest
+- file: user_model
+- file: criticism
+- file: conclusion
+- file: references

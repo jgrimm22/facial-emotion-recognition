@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menschliche Kommunikation &#8212; Facial Emotion Recognition</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mimikcodierung und Feature Extraction" href="featureextraction.html" />
+    <link rel="prev" title="Was ist Facial Emotion Recognition?" href="definition.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Facial Emotion Recognition</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Facial Emotion Recognition
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="definition.html">
+   Was ist Facial Emotion Recognition?
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Menschliche Kommunikation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="featureextraction.html">
+   Mimikcodierung und Feature Extraction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="datasets.html">
+   Daten(sätze)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="models.html">
+   FER Ansätze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="fem_impl.html">
+   Implementation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="VideoTest.html">
+   Selbsttrainiertes Modell per Webcam testen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="criticism.html">
+   Kritik
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="conclusion.html">
+   Fazit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="references.html">
+   Quellen
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/human_communication.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/jgrimm22/facial-emotion-recognition"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/jgrimm22/facial-emotion-recognition/issues/new?title=Issue%20on%20page%20%2Fhuman_communication.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#emotionen">
+   Emotionen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grundemotionen-be">
+     Grundemotionen (BE)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kombinierte-emotionen-ce">
+     Kombinierte Emotionen (CE)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mimik">
+   Mimik
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#micro-expressions-me">
+     Micro Expressions (ME)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="menschliche-kommunikation">
+<h1>Menschliche Kommunikation<a class="headerlink" href="#menschliche-kommunikation" title="Permalink to this headline">¶</a></h1>
+<p>In der menschlichen Kommunikation läuft nur zu ca. 1/3 auf der verbalen Ebene ab, also das was geschrieben oder gesprochen wird. Ungefähr 2/3 unserer Kommunikation verläuft nonverbal. Nonverbal bezeichnet die Mimik, Körpersprache, räumliche Position und Stimmmodulation.</p>
+<p>Kulturell bedingte Unterschiede in der Kommunikation gibt es dabei nicht nur durch unterschiedliche Sprachen, sondern auch durch mehrdeutige und unterschiedliche Ausdrucksweisen in der nonverbalen Kommunikation.</p>
+<p>Jedoch gibt es beispielsweise bei der Mimik auch kulturell unabhängige Muster, die überall auf der Welt gleich verstanden werden. Gerade in Bezug auf den Ausdruck von Emotionen.</p>
+<!-- #region -->
+<div class="section" id="emotionen">
+<h2>Emotionen<a class="headerlink" href="#emotionen" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>Emotion: Reaktion des gesamten Organismus, die die physiologische Erregung, Ausdrucksverhalten und bewusste Erfahrung beinhaltet.</p>
+</div>
+<p>Emotionen beinhalten also sowohl</p>
+<ul class="simple">
+<li><p>Ausdrucksverhalten (z.B. Mimik)</p></li>
+<li><p>Aktivierung bestimmter zentralnervöser Systeme im Gehirn</p></li>
+<li><p>physiologische Reaktionen (z.B Blutdruck, Herzfrequenz)</p></li>
+<li><p>subjektives Erleben</p></li>
+<li><p>kognitive Bewertung der Situation</p></li>
+<li><p>Motivation &amp; Handlungsbereitschaft</p></li>
+</ul>
+<p>Emotionen sind also nur teilweise von außen wahrnehmbar und messbar.</p>
+<p>Wie kann man Emotionen ableiten?</p>
+<ul class="simple">
+<li><p>Sprache</p></li>
+<li><p>Tonation</p></li>
+<li><p>Gesichtsausdrücke</p></li>
+<li><p>Körperhaltung</p></li>
+</ul>
+<div class="section" id="grundemotionen-be">
+<h3>Grundemotionen (BE)<a class="headerlink" href="#grundemotionen-be" title="Permalink to this headline">¶</a></h3>
+<p>Sechs grundlegende Emotionen, die in vielen Datensätzen die Grundlage für das Labeling darstellen, gehen auf den US-amerikanischen Psychologen Paul Ekman zurück. Diese Emotionen werden als Grundemotionen oder Basisemotionen bezeichnet.</p>
+<p>Diese Grundemotionen sind in allen Kulturen der Welt vertreten und werden überall nahezu gleich ausgedrückt. Unabhängig davon, wo Menschen auf die Welt gekommen sind oder wo und wie sie erzogen wurden, können sie diese Grundemotionen instinktiv bei dem Gegenüber erkennen und meist auch richtig zuordnen somit sind sie kulturunabhängig und international gültig.</p>
+<p>Es wird davon ausgegangen, dass jeder Mensch diese Emotionen von Natur aus (auch schon im Säuglingsalter) in sich trägt und empfinden kann.</p>
+<p>Die Kriterien für die Klassifikation der Grundemotionen sind:</p>
+<ul class="simple">
+<li><p>Universelles Ausdrucksverhalten</p></li>
+<li><p>Angeborene Reaktionsmuster</p></li>
+<li><p>Spezielle Auslösungsbedingungen und adaptive Funktionen (z.B. Bedrohung -&gt; Furcht, Verlust -&gt; Trauer)</p></li>
+<li><p>Automatische Bewertung</p></li>
+<li><p>Spezielle Gehirnsysteme</p></li>
+</ul>
+<p>Die 6 Grundemotionen nach Paul Ekman sind:</p>
+<ul class="simple">
+<li><p>Freude</p></li>
+<li><p>Trauer/Traurigkeit</p></li>
+<li><p>Überraschung</p></li>
+<li><p>Wut/Ärger</p></li>
+<li><p>Angst/Furcht</p></li>
+<li><p>Ekel</p></li>
+</ul>
+<p><img alt="Basisemotionen" src="_images/Seven-basic-human-emotions.png" /></p>
+</div>
+<div class="section" id="kombinierte-emotionen-ce">
+<h3>Kombinierte Emotionen (CE)<a class="headerlink" href="#kombinierte-emotionen-ce" title="Permalink to this headline">¶</a></h3>
+<p>Inzwischen geht man davon aus, dass die menschliche Emotionsvielfalt weit über die grundlegenden Basisemotionen hinaus geht und auch die Vielfalt der Gesichtsausdrücke umfangreicher ist, als nur die zuvor beschrieben Basisemotionen.</p>
+<p>Ein Beispiel sind die zusammengesetzten Emotionen (Compound Emotions). Diese Emotionen setzten sich jeweils aus zwei Grundemotionen zusammen.</p>
+<p>Ein Beispiel für eine kombinierte Emotion ist die freudige Überraschung. Wir erleben ein freudig überraschendes Ereignis anders, als ein ausschließlich überraschendes. Aus diesem Grund ist es durchaus sinnvoll die Existenz dieser komplexeren Emotionen ebenfalls zu berücksichtigen, um eine größere Differenziertheit in der Emotionserkennung abzubilden.</p>
+<p>Auch bei kombinierten Emotionen  lassen sich konstante und weitestgehend kulturell unabhängige Gesichtsausdrücke identifizieren, welche sich von denen der Basisemotionen unterscheiden.</p>
+<p>Beispiele für zusammengesetzte Emotionen:</p>
+<ul class="simple">
+<li><p>freudig überrascht</p></li>
+<li><p>freudig angewidert</p></li>
+<li><p>traurig ängstlich</p></li>
+<li><p>traurig wütend</p></li>
+<li><p>traurig überrascht</p></li>
+<li><p>traurig angewidert</p></li>
+<li><p>wütend ängstlich</p></li>
+<li><p>ängstlich überrascht</p></li>
+<li><p>wütend angewidert</p></li>
+<li><p>wütend überrascht</p></li>
+<li><p>wütend angewidert</p></li>
+<li><p>ekelhaft überrascht</p></li>
+<li><p>fröhlich ängstlich</p></li>
+<li><p>fröhlich traurig</p></li>
+</ul>
+<p><img alt="kombinierte Emotionen" src="_images/CompoundEmotions.jpg" /></p>
+<!-- #endregion -->
+</div>
+</div>
+<div class="section" id="mimik">
+<h2>Mimik<a class="headerlink" href="#mimik" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>Mimik bzw. Gesichtsausdrücke (facil expressions) sind sichtbare Bewegungen auf der Gesichtsoberfläche und die Reaktion auf den inneren emotionalen Zustand, die Absichten oder die soziale Kommunikation einer Person.</p>
+</div>
+<ul class="simple">
+<li><p>Einige mimische Ausdrücke müssen je nach Kontext unterschiedlich bewertet werden, da sie sich sehr stark ähneln können, z.B. Angst vs. Wut.</p></li>
+<li><p>Wie stark die Mimik ausgepräg ist hängt neben dem kulturellen Kontext auch von der individuellen Persönlichkeit einer Person ab. Allerdings sind einige Ausdrucksmerkmale auch kulturübergreifend feststellbar.</p></li>
+<li><p>Die (natürlichen) Ausdrücke dauern jeweils nur wenige Sekunden an. Gestellte Ausdrücke wie beispielsweise für ein Foto können auch länger andauern. Echte Emotionen bauen sich jedoch im Gesicht langsamer auf und ab, als gestellte.</p></li>
+<li><p>Die verschiedenen Gesichtsregionen haben eine unterschiedlich starke Aussagekraft, so sind mehr Informationen an Augen und Mund als an Stirn oder Wange abzulesen.</p></li>
+</ul>
+<div class="section" id="micro-expressions-me">
+<h3>Micro Expressions (ME)<a class="headerlink" href="#micro-expressions-me" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Definition</p>
+<p>Mikroausdrücke sind flüchtige und unwillkürliche Gesichtsausdrücke.</p>
+</div>
+<p>Egal ob bewusst, unbewusst, erwünscht oder unerwünscht: Wir sind nicht in der Lage unseren aktuellen Gefühlszustand völlig zu verbergen. Über sogenannte Mikroausdrücke oder Micro Expressions (ME) zeichnet sich für den Bruchteil einer Sekunde (1/25 bis 1/2 s) unsere tatsächlichen Gefühle auf unserem Gesicht ab.</p>
+<p>Damit ist unsere Mimik schneller als unser Verstand und egal wie sehr wir uns bemühen, wir können diese mimischen Reaktionen nicht steuern. Erst nach diesen paar Millisekunden haben wir die Möglichkeit unsere Mimik wieder unter Kontrolle zu bringen und den Gesichtsausdruck zu zeigen, den wir zeigen wollen.</p>
+<p>Mikroausdrücke sind so schnell und subtil, dass sie mit dem menschlichen Auge nicht wahrgenommen werden. Eine Studie zeigt, dass normale Menschen ohne Training bei Aufgaben zur Erkennung von Mikroausdrücken im Durchschnitt nur wenig besser als der Zufall abschneiden. Daher werden Computer Vision und maschinelle Lernmethoden für die automatische Analyse von Mikroausdrücken interessant. Maschinelle Lernverfahren sind bei einer ausreichend hohen Framerate in der Lage die Mikroausdrücke zu detektieren und zu erkennen.</p>
+<p><img alt="Micro expressions / Mikroausdrücke" src="_images/lieToMeMicroExpressions.jpg" /></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="definition.html" title="previous page">Was ist Facial Emotion Recognition?</a>
+    <a class='right-next' id="next-link" href="featureextraction.html" title="next page">Mimikcodierung und Feature Extraction</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Jessica Hofmann, Julia Grimm<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
